@@ -52,6 +52,13 @@ namespace Hotel.Modules
                 contentPanel_.Controls.Add(content1);
        
             }
+            else if (viewName.ToLower() == "reservations")
+            {
+                UserControls.Reservations content1 = new UserControls.Reservations();
+                content1.Dock = DockStyle.Fill;
+                contentPanel_.Controls.Add(content1);
+
+            }
             else
             {
                 

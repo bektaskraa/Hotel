@@ -33,12 +33,14 @@
             button1 = new Button();
             button2 = new Button();
             contentPanel = new Panel();
+            button3 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(231, 231, 231);
+            panel1.Controls.Add(button3);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(button2);
@@ -69,7 +71,7 @@
             button1.Location = new Point(5, 98);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
-            button1.Size = new Size(211, 40);
+            button1.Size = new Size(215, 40);
             button1.TabIndex = 0;
             button1.Text = "Ana Sayfa";
             button1.UseVisualStyleBackColor = false;
@@ -84,7 +86,7 @@
             button2.Location = new Point(5, 146);
             button2.Margin = new Padding(4);
             button2.Name = "button2";
-            button2.Size = new Size(211, 40);
+            button2.Size = new Size(215, 40);
             button2.TabIndex = 1;
             button2.Text = "Odalar";
             button2.UseVisualStyleBackColor = false;
@@ -99,6 +101,21 @@
             contentPanel.Name = "contentPanel";
             contentPanel.Size = new Size(816, 697);
             contentPanel.TabIndex = 1;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Gray;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(5, 194);
+            button3.Margin = new Padding(4);
+            button3.Name = "button3";
+            button3.Size = new Size(215, 40);
+            button3.TabIndex = 3;
+            button3.Text = "Rezarvasyonlar";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // Form1
             // 
@@ -124,5 +141,6 @@
         private Button button1;
         private Panel contentPanel;
         private Label label1;
+        private Button button3;
     }
 }

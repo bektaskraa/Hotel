@@ -82,7 +82,7 @@
             button8.Name = "button8";
             button8.Size = new Size(224, 206);
             button8.TabIndex = 5;
-            button8.Text = "Rezarvasyon";
+            button8.Text = "Rezervasyonlar";
             button8.UseVisualStyleBackColor = false;
             button8.Click += button8_Click;
             // 

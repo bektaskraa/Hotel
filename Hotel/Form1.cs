@@ -29,6 +29,7 @@ namespace Hotel
             changeView("main");
 
             button2.BackColor = Color.Gray;
+            button3.BackColor = Color.Gray;
 
             button1.BackColor = Color.FromArgb(0, 169, 255);
         }
@@ -44,10 +45,19 @@ namespace Hotel
             changeView("rooms");
 
             button1.BackColor = Color.Gray;
+            button3.BackColor = Color.Gray;
 
             button2.BackColor = Color.FromArgb(0, 169, 255);
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            changeView("reservations");
 
+            button1.BackColor = Color.Gray;
+            button2.BackColor = Color.Gray;
+
+            button3.BackColor = Color.FromArgb(0, 169, 255);
+        }
     }
 }
