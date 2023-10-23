@@ -1,8 +1,10 @@
+
 ﻿# Otel Otomasyonu Projesi
 ## Proje Planlaması
 ### Müşteri İhtiyaçları
 - Oda bilgilerinin tutulabilmesi.
 - Müşteri bilgilerinin tutulabilmesi.
+- Rezervasyon sisteminin olması.
 - Toplam ciro hesabı.
 ### Projenin Sınırları
 - Oda ve müşteri tablolarında ekle, güncelle, kaldır ve listele fonksiyonlarının bulunması.
@@ -22,11 +24,13 @@
 | Risk Açıklaması | Risk Düzeyi | Projeye Etki Düzeyi | Çözüm Yöntemleri |
 |--|--|--|--|
 | Aynı numaralı odaların eklenmesi | Yüksek | Yüksek | Instert işlemi sırasında aynı numaralı kayıt var mı kontrolünün sağlanması. |
+| Aynı tarih içinde birden fazla rezervasyon yapma | Yüksek | Yüksek | Instert işlemi sırasında aynı tarih içinde kayıt var mı kontrolünün sağlanması. |
+| Aynı isimli oda tipinin eklenmesi | Yüksek | Yüksek | Instert işlemi sırasında aynı isimli kayıt var mı kontrolünün sağlanması. |
 
 ### Kullanılacak Teknolojiler Ve Araçlar
 - **Visual Studio 2022**
 -  **Canva**: Proje arayüzünün örnek çiziminin yapılması için kullanılan uygulama.
-- **Microsft Access**: Veritabanı teknolojisi.
+- **MySQL**: Veritabanı teknolojisi.
 
 ### Fonksiyonel Diagramların Kurulması
 ```mermaid
