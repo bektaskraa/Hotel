@@ -58,6 +58,12 @@ namespace Hotel.Modules
                 content1.Dock = DockStyle.Fill;
                 contentPanel_.Controls.Add(content1);
 
+            }else if (viewName.ToLower() == "customers")
+            {
+                UserControls.Customers content1 = new UserControls.Customers();
+                content1.Dock = DockStyle.Fill;
+                contentPanel_.Controls.Add(content1);
+
             }
             else
             {

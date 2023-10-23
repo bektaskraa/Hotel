@@ -51,9 +51,9 @@
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button7.ForeColor = Color.White;
-            button7.Location = new Point(232, 3);
+            button7.Location = new Point(230, 3);
             button7.Name = "button7";
-            button7.Size = new Size(112, 103);
+            button7.Size = new Size(125, 110);
             button7.TabIndex = 6;
             button7.Text = "Odalar";
             button7.UseVisualStyleBackColor = false;
@@ -65,22 +65,24 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button6.ForeColor = Color.White;
-            button6.Location = new Point(232, 106);
+            button6.Location = new Point(230, 115);
             button6.Name = "button6";
-            button6.Size = new Size(112, 103);
+            button6.Size = new Size(125, 110);
             button6.TabIndex = 7;
             button6.Text = "Müşteriler";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button8
             // 
             button8.BackColor = Color.Gray;
+            button8.Dock = DockStyle.Left;
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button8.ForeColor = Color.White;
-            button8.Location = new Point(3, 3);
+            button8.Location = new Point(0, 0);
             button8.Name = "button8";
-            button8.Size = new Size(224, 206);
+            button8.Size = new Size(224, 228);
             button8.TabIndex = 5;
             button8.Text = "Rezervasyonlar";
             button8.UseVisualStyleBackColor = false;
@@ -92,9 +94,9 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(350, 3);
+            button5.Location = new Point(361, 3);
             button5.Name = "button5";
-            button5.Size = new Size(112, 103);
+            button5.Size = new Size(125, 110);
             button5.TabIndex = 8;
             button5.Text = "Mali Kayıtlar";
             button5.UseVisualStyleBackColor = false;

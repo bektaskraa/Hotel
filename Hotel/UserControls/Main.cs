@@ -70,5 +70,11 @@ namespace Hotel.UserControls
         {
             changeView("reservation");
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            changeView("customers");
+
+        }
     }
 }

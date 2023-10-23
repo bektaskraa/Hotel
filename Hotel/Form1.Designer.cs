@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            button3 = new Button();
             label1 = new Label();
             button1 = new Button();
             button2 = new Button();
             contentPanel = new Panel();
-            button3 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -50,6 +50,21 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(224, 697);
             panel1.TabIndex = 0;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Gray;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(5, 194);
+            button3.Margin = new Padding(4);
+            button3.Name = "button3";
+            button3.Size = new Size(215, 40);
+            button3.TabIndex = 3;
+            button3.Text = "Rezervasyonlar";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // label1
             // 
@@ -101,21 +116,6 @@
             contentPanel.Name = "contentPanel";
             contentPanel.Size = new Size(816, 697);
             contentPanel.TabIndex = 1;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.Gray;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(5, 194);
-            button3.Margin = new Padding(4);
-            button3.Name = "button3";
-            button3.Size = new Size(215, 40);
-            button3.TabIndex = 3;
-            button3.Text = "Rezarvasyonlar";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
             // 
             // Form1
             // 
