@@ -65,6 +65,8 @@ namespace Hotel.UserControls
             {
                 string musteriAdi = reader.GetString("MusteriAdi");
                 string odaNumarasi = reader.GetString("OdaNumarasi");
+                //double fiyat = reader.GetDouble("fiyat");
+                double fiyat = 0;
                 string odaTipi = reader.GetString("OdaTipi");
                 int kalacagiGun = reader.GetInt32("KalacagiGun");
                 int bitimineKacGunKaldi = reader.GetInt32("BitimineKacGunKaldi");
@@ -74,13 +76,16 @@ namespace Hotel.UserControls
                 reservation.setCustomerName(musteriAdi);
                 reservation.setRoom(odaNumarasi, odaTipi);
                 reservation.setDay(kalacagiGun, bitimineKacGunKaldi, rezervasyonTarihi);
+                reservation.setPrice(fiyat);
 
                 // Diğer verileri kullanarak gerekli işlemleri yapabilirsiniz
                 flowLayoutPanel1.Controls.Add(reservation);
             }
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

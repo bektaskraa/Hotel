@@ -114,14 +114,14 @@
             contentPanel.Location = new Point(224, 0);
             contentPanel.Margin = new Padding(4);
             contentPanel.Name = "contentPanel";
-            contentPanel.Size = new Size(816, 697);
+            contentPanel.Size = new Size(1096, 697);
             contentPanel.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1040, 697);
+            ClientSize = new Size(1320, 697);
             Controls.Add(contentPanel);
             Controls.Add(panel1);
             Font = new Font("Malgun Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);

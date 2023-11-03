@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            groupBox11 = new GroupBox();
+            comboBox1 = new ComboBox();
             groupBox4 = new GroupBox();
             groupBox9 = new GroupBox();
             dateTimePicker1 = new DateTimePicker();
@@ -50,6 +52,7 @@
             button1 = new Button();
             label1 = new Label();
             panel1.SuspendLayout();
+            groupBox11.SuspendLayout();
             groupBox4.SuspendLayout();
             groupBox9.SuspendLayout();
             groupBox8.SuspendLayout();
@@ -65,12 +68,34 @@
             // panel1
             // 
             panel1.AutoScroll = true;
+            panel1.Controls.Add(groupBox11);
             panel1.Controls.Add(groupBox4);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 52);
             panel1.Name = "panel1";
             panel1.Size = new Size(832, 488);
             panel1.TabIndex = 6;
+            // 
+            // groupBox11
+            // 
+            groupBox11.Controls.Add(comboBox1);
+            groupBox11.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            groupBox11.Location = new Point(429, 22);
+            groupBox11.Name = "groupBox11";
+            groupBox11.Size = new Size(383, 62);
+            groupBox11.TabIndex = 2;
+            groupBox11.TabStop = false;
+            groupBox11.Text = "Oda ";
+            groupBox11.Paint += groupBox11_Paint;
+            // 
+            // comboBox1
+            // 
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(6, 26);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(371, 28);
+            comboBox1.TabIndex = 4;
             // 
             // groupBox4
             // 
@@ -87,7 +112,7 @@
             groupBox4.Size = new Size(407, 436);
             groupBox4.TabIndex = 2;
             groupBox4.TabStop = false;
-            groupBox4.Text = "Başlık";
+            groupBox4.Text = "Müşteri Bilgileri";
             // 
             // groupBox9
             // 
@@ -288,7 +313,9 @@
             Controls.Add(panel2);
             Name = "FormReservation";
             Size = new Size(832, 540);
+            Load += FormReservation_Load;
             panel1.ResumeLayout(false);
+            groupBox11.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
             groupBox9.ResumeLayout(false);
             groupBox8.ResumeLayout(false);
@@ -333,5 +360,7 @@
         private DateTimePicker dateTimePicker1;
         private GroupBox groupBox8;
         private TextBox textBoxGeceSayisi;
+        private GroupBox groupBox11;
+        private ComboBox comboBox1;
     }
 }

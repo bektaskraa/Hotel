@@ -67,6 +67,7 @@
             button1.TabIndex = 7;
             button1.Text = "İptal et";
             button1.UseVisualStyleBackColor = false;
+            button1.Visible = false;
             // 
             // labelOdaBilgileri
             // 
